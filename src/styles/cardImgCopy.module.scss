@@ -1,0 +1,55 @@
+@import './mixin.scss';
+
+@mixin cardImgCopy {
+    @include flex-row();
+    @include whiteBackShadow();
+    height: auto;
+    img{
+        display: block;
+        object-fit: cover;
+        max-width: 50%;
+        height: auto;
+    }
+    .info{
+        @include flex-column();
+        width: 45%;
+        padding: 3%;
+        h3{
+            font-size: $font5;
+            font-weight: bold;
+            text-align: start;
+            color: $black;
+        }
+        p{
+            color: $black;
+            font-size: $font7;
+        }
+        a{
+            display: inline-block;
+            margin: 0 0 0 auto;
+            width: max-content;
+            text-decoration: none;
+            color: $blue;
+            font-size: $font7;
+            position: relative;
+            &:before{
+                content: '';
+                transition: all .3s;
+                position: absolute;
+                height: 2px;
+                width: 0;
+                bottom: -1px;
+                background-color: $blue;
+            }
+            &:hover{
+                &:before{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.cardNew{
+    @include cardImgCopy();
+}

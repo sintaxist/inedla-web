@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap');
+@import './mixin.scss';
+
+*{
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+h1,h2,h3,h5,h6{
+  font-weight: normal;
+  text-align: center;
+}
+body{
+  background-color: $white;
+}
+p, a{
+  font-size: $font5;
+}
+.white-back-shadow{
+  background-color: $white;
+  box-shadow: $shadow;
+}
+.flex-item{
+  @include flex-row();
+}
+.blue-title{
+  @include titleStyle($gradient, 0, auto, 30px );
+}
