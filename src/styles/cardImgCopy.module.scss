@@ -7,13 +7,15 @@
     img{
         display: block;
         object-fit: cover;
-        max-width: 50%;
+        max-width: 40%;
         height: auto;
     }
     .info{
         @include flex-column();
         width: 45%;
         padding: 3%;
+        height: 77%;
+        margin: auto;
         h3{
             font-size: $font5;
             font-weight: bold;

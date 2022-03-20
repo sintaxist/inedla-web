@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { getNoticiaImg } from './utils/getImgNoticia';
+import { getNoticiaImg } from './getImgNoticia';
 // import { NoticiasData } from '../data/NoticiasData';
 // import img from '../images/noticiaImg.png';
 
-import styles from '../styles/cardImgCopy.module.scss';
+import styles from '../../styles/cardImgCopy.module.scss';
 
 export default class NoticiaCard extends Component{
     render(){

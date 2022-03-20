@@ -1,6 +1,6 @@
 export const NoticiasData = [
     {
-        id: 1001,
+        id: '1001',
         path: '1001',
         title: 'Noticia 1',
         author: 'Lic. Pedro Fuentes',
@@ -10,7 +10,7 @@ export const NoticiasData = [
         imgPath: 'noticiaImg.06e8661e0011daeb4630.png'
     },
     {
-        id: 1002,
+        id: '1002',
         path: '1002',
         title: 'Noticia 2',
         author: 'Lic. Pedro Fuentes',
@@ -20,7 +20,7 @@ export const NoticiasData = [
         imgPath: 'noticiaImg.06e8661e0011daeb4630.png'
     },
     {
-        id: 1003,
+        id: '1003',
         path: '1003',
         title: 'Noticia 3',
         author: 'Lic. Pedro Fuentes',
@@ -30,7 +30,7 @@ export const NoticiasData = [
         imgPath: 'noticiaImg.06e8661e0011daeb4630.png'
     },
     {
-        id: 1004,
+        id: '1004',
         path: '1004',
         title: 'Noticia 4',
         author: 'Lic. Pedro Fuentes',

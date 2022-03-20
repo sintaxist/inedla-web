@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../../styles/header-styles.scss'
 import logo from '../../images/logo.svg';
 import {Dropdown, DropdownTwo} from './Dropdown';
+import MenuBars from './SidebarMenu/Sidebar'
 import {
   Nav,
   NavLink,
@@ -9,6 +10,7 @@ import {
   Logo,
   BtnLink
 } from './NavbarElements';
+import {IoIosArrowDown} from 'react-icons/io'
 
 function Navbar() {
   const [dropdown, setDropdown] = useState(false);
@@ -55,7 +57,7 @@ function Navbar() {
             className={dropdown ? 'father activo' : 'father'}>
             <div className='nav-links submenu'>
               Conoce INEDLA 
-              <i className='fa fa-caret-down' />
+              <IoIosArrowDown />
             </div>
             {dropdown && <Dropdown/>}
           </div>
@@ -75,7 +77,7 @@ function Navbar() {
           className={dropdown2 ? 'father activo' : 'father'}>
           <div className='nav-links submenu'>
             Comunidad
-            <i className='fa fa-caret-down' />
+            <IoIosArrowDown/>
           </div>
           {dropdown2 && <DropdownTwo />}
         </div>
@@ -85,6 +87,7 @@ function Navbar() {
           Inscribete
         </BtnLink>
       </NavMenu>
+      <MenuBars/>
     </Nav>
   );
 }

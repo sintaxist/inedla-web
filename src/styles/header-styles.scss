@@ -33,7 +33,7 @@
 }
 .submenu{
     @include flex-row();
-    i{
+    svg{
         margin-left: 10px;
     }
 }

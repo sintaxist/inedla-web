@@ -1,6 +1,6 @@
 import { NoticiasData } from '../../data/NoticiasData';
 import { Content, Grid2Items } from './UseElements';
-import NoticiaCard from '../noticiaCard';
+import NoticiaCard from '../utils/noticiaCard';
 // import Loader from '../loader';
 
 const Noticias = () => {

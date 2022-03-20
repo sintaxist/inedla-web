@@ -1,6 +1,17 @@
+@import 'mixin.scss';
+
 *{
     margin: 0;
 }
 .detailContainer{
-    color: #fff;
+    p{
+        margin: 30px 0px;
+    }
+}
+.details{
+    @include flex-row();
+    width: 100%;
+    p{
+        margin: unset;
+    }
 }

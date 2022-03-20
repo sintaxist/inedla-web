@@ -21,4 +21,4 @@ export const Grid2Items = styled.ul`
         grid-template-columns: auto;
         justify-content: space-between;
     }
-`
+`;

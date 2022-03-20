@@ -22,7 +22,7 @@
     position: relative;
     display: block;
     margin: $margin;
-    width: min-content;
+    width: max-content;
     padding: 10px 30px 10px $padding;
     margin-bottom: 60px;
     &:before{
