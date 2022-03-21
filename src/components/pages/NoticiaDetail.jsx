@@ -1,6 +1,6 @@
 // import { useEffect, useState } from 'react';
 import { useParams  } from 'react-router-dom';
-import { Content } from './UseElements';
+import { Content } from '../utils/UseElements';
 // import { NoticiasData } from '../../data/NoticiasData';
 // import { Loader } from '../loader'
 

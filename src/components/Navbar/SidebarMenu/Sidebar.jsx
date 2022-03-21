@@ -10,10 +10,14 @@ const NavIcon = styled(Link)`
   margin-left: 2rem;
   font-size: 2rem;
   height: 80px;
-  display: flex;
+  display: none;
   justify-content: flex-start;
   align-items: center;
   color: #1f140f;
+
+  @media screen and (max-width: 960px){
+    display: flex;
+  }
 `;
 
 const Cross = styled(Link)`
@@ -21,7 +25,7 @@ const Cross = styled(Link)`
   justify-content: flex-end;
   align-items: center;
   height: 95px;
-  margin-right: 2rem;
+  margin-right: 1rem;
   font-size: 2rem;
   color: #F9FDFC;
 `

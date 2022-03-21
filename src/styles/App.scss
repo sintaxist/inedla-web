@@ -29,3 +29,6 @@ p, a{
 .blue-title{
   @include titleStyle($gradient, 0, auto, 30px );
 }
+.displayNone{
+  display: none !important;
+}

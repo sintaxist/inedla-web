@@ -10,12 +10,10 @@ import Plantel from './components/pages/plantel';
 import PlanEstudios from './components/pages/estudios';
 import Noticias from './components/pages/noticias';
 import { NoticiaDetail } from './components/pages/NoticiaDetail';
-import TestiMonials from './components/carousel/TestiMonials'
 
 function App() {
   return (
-    <>
-      <Router>
+    <Router>
       <Navbar/>
       <Routes>
         <Route path="/" exact element={<Home/>}></Route>
@@ -29,8 +27,6 @@ function App() {
         <Route path="/noticias/:movieId" exact element={<NoticiaDetail/>}></Route>
       </Routes>
     </Router>
-    <TestiMonials></TestiMonials>
-    </>
   );
 }
 

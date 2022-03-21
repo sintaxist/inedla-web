@@ -1,5 +1,5 @@
 import { NoticiasData } from '../../data/NoticiasData';
-import { Content, Grid2Items } from './UseElements';
+import { Content, Grid2Items } from '../utils/UseElements';
 import NoticiaCard from '../utils/noticiaCard';
 // import Loader from '../loader';
 
