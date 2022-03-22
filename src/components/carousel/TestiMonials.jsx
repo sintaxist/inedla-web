@@ -42,7 +42,7 @@ const TestiMonials = () => {
                         <div>No testimonials Allowed</div> :
                         testiMonialsData.map(testiMonialDetail => {
                             return (
-                                <TestiMonialsDetails testiMonialDetail={testiMonialDetail} key={testiMonialDetail._key} />
+                                <TestiMonialsDetails testiMonialDetail={testiMonialDetail} key={testiMonialDetail.id} />
 
                             )
                         })

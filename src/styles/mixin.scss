@@ -25,6 +25,7 @@
     width: max-content;
     padding: 10px 30px 10px $padding;
     margin-bottom: 30px;
+    font-size: $font1;
     &:before{
         content: '';
         border-radius: 50px;
@@ -35,5 +36,38 @@
         position: absolute;
         bottom: 0;
         left: $position;
+    }
+}
+
+@mixin ButtonStyles ($color1, $color2){
+    color: $color1;
+    background: $color2;
+    box-shadow: $shadow;
+    svg{
+        display: block;
+        width: 30px;
+        margin: 1px auto 0px 0px;
+        transition: all .3s;
+        path{
+            stroke: $color1;
+        }
+        .line{
+            stroke-width: 0;
+        }
+    }
+    &:hover{
+        color: $color2;
+        background: transparent;
+        box-shadow: 0px 0px 25px $color2;
+        border: 3px $color2 solid;
+        svg{
+            margin: 1px auto 0px 10px;
+            path{
+                stroke: $color2;
+            }
+            .line{
+                stroke-width: 2;
+            }
+        }
     }
 }

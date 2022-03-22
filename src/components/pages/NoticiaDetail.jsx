@@ -2,7 +2,7 @@
 import { useParams  } from 'react-router-dom';
 import { Content } from '../utils/UseElements';
 // import { NoticiasData } from '../../data/NoticiasData';
-// import { Loader } from '../loader'
+// import { Loader } from '../utils/Loader'
 
 import styles from '../../styles/noticiaDetail.module.scss';
 // import { getNoticiaImg } from '../utils/getImgNoticia';

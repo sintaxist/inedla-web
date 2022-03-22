@@ -62,7 +62,7 @@
     padding: 30px 0px;
   }
   .owl-dots {
-    display: inline-block;
+    display: inline-block !important;
     width: 100%;
     text-align: center;
     margin-top: 50px !important;
@@ -85,6 +85,7 @@
 }
 .owl-theme .owl-dots .owl-dot:hover span{
   background: transparent;
+  transform: translate3d(0px, -50%, 0px) scale(0.6);
   border: 2px solid $blue;
   padding: 0px 10px;
 }

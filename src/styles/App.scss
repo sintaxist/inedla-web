@@ -29,6 +29,19 @@ p, a{
 .blue-title{
   @include titleStyle($gradient, 0, auto, 30px );
 }
+.white-title{
+  @include titleStyle($white, 0, auto, 30px );
+  color: white;
+}
 .displayNone{
   display: none !important;
+}
+.whiteButton{
+  @include ButtonStyles($blue, $white);
+}
+.blueButton{
+  @include ButtonStyles($white, $blue);
+}
+.bgGradient{
+  background: $gradient;
 }
