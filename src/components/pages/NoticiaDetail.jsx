@@ -12,7 +12,7 @@ export function NoticiaDetail (){
     const { movieId } = useParams();
     // console.log(movieId)
     return(
-        <Content className={styles.detailContainer}>
+        <Content className={styles.detailContainer + ' breakWidth2'}>
             <h1 className='blue-title'>Titulo Noticia</h1>
             <div className={styles.details}>
                 <p>Publicado el 19 de marzo de 2022</p>

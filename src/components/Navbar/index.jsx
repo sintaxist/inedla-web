@@ -49,46 +49,48 @@ function Navbar() {
   };
 
   return (
-    <Nav className='white-back-shadow'>
-      <NavMenu>
-          <div
-            onMouseEnter={onMouseEnter}
-            onMouseLeave={onMouseLeave}
-            className={dropdown ? 'father activo' : 'father'}>
-            <div className='nav-links submenu'>
-              Conoce INEDLA 
-              <IoIosArrowDown />
+    <div className='white-back-shadow'>
+      <Nav className='widthBreak'>
+        <NavMenu>
+            <div
+              onMouseEnter={onMouseEnter}
+              onMouseLeave={onMouseLeave}
+              className={dropdown ? 'father activo' : 'father'}>
+              <div className='nav-links submenu'>
+                Conoce INEDLA 
+                <IoIosArrowDown />
+              </div>
+              {dropdown && <Dropdown/>}
             </div>
-            {dropdown && <Dropdown/>}
+            <NavLink
+              to='/admisiones'
+              className='nav-links'>
+                Admisiones
+            </NavLink>
+        </NavMenu>
+        <NavLink to='/' className="navbar-logo">
+          <Logo src={logo} alt="logo" />
+        </NavLink>
+        <NavMenu>
+          <div
+            onMouseEnter={onMouseEnter2}
+            onMouseLeave={onMouseLeave2}
+            className={dropdown2 ? 'father activo' : 'father'}>
+            <div className='nav-links submenu'>
+              Comunidad
+              <IoIosArrowDown/>
+            </div>
+            {dropdown2 && <DropdownTwo />}
           </div>
-          <NavLink
-            to='/admisiones'
-            className='nav-links'>
-              Admisiones
-          </NavLink>
-      </NavMenu>
-      <NavLink to='/' className="navbar-logo">
-        <Logo src={logo} alt="logo" />
-      </NavLink>
-      <NavMenu>
-        <div
-          onMouseEnter={onMouseEnter2}
-          onMouseLeave={onMouseLeave2}
-          className={dropdown2 ? 'father activo' : 'father'}>
-          <div className='nav-links submenu'>
-            Comunidad
-            <IoIosArrowDown/>
-          </div>
-          {dropdown2 && <DropdownTwo />}
-        </div>
-        <BtnLink
-          to='/inscribete'
-          className='nav-links inscribete'>
-          Inscribete
-        </BtnLink>
-      </NavMenu>
-      <MenuBars/>
-    </Nav>
+          <BtnLink
+            to='/inscribete'
+            className='nav-links inscribete'>
+            Inscribete
+          </BtnLink>
+        </NavMenu>
+        <MenuBars/>
+      </Nav>
+    </div>
   );
 }
 

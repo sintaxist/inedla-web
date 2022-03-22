@@ -56,3 +56,18 @@
 .cardNew{
     @include cardImgCopy();
 }
+
+.cardValor{
+    @include cardImgCopy();
+    height: 250px;
+    img{
+        width: 40%;
+    }
+    .info{
+        height: unset;
+        padding: unset;
+        h3{
+            margin-bottom: 20px;
+        }
+    }
+}

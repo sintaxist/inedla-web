@@ -31,15 +31,21 @@ export const Button = styled(Link)`
     justify-content: space-between;
     align-items: center;
     width: max-content;
-    margin: auto;
-    padding: 5px 30px;
+    margin: 30px auto 0px;
+    padding: 3px 20px 3px 30px;
     border-radius: 50px;
     text-align:  center;
     text-decoration: none;
     cursor: pointer;
     transition: all .3s;
     border:  3px solid transparent;
-`
+`;
+
+export const ImgBanner = styled.img`
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+`;
 
 export const FlechaButton = () => {
     return(

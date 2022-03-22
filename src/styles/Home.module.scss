@@ -1,0 +1,90 @@
+@import 'mixin.scss';
+
+.bannerHome{
+    width: 88%;
+    height: calc(100vh - 96px);
+    background: url(https://xochimaco.com/img-inedla/img-banner.png) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    padding: 0px 6%;
+}
+.copyButton{
+    position: relative;
+    display: block;
+    max-width: 50vw;
+    min-width: 400px;
+    top: 29%;
+    left: 3%;
+    h1{
+        font-size: 50px;
+        text-align: left;
+        color: $white;
+    }
+    a{
+        margin-left: 0;
+    }
+}
+.numeralia{
+    background: #0b0827;
+    margin: auto;
+    z-index: 10;
+    > div{
+        > div{
+            display: block;
+            margin: -100px auto 0;
+            padding: 4% 3%;
+            text-align: center;
+        }
+    }
+}
+.datos{
+    margin: 60px auto 0;
+}
+.dato{
+    width: 20%;
+    display: block;
+    max-width: 200px;
+    padding: 4% 3%;
+    color: $white;
+    text-align: center;
+    align-items: center;
+    h3{
+        font-size: $font1;
+        font-weight: bold;
+        margin: 30px auto;
+    }
+    img{
+        width: 70%;
+        max-width: 200px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .datos{
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .dato{
+        @include flex-row();
+        align-items: center;
+        text-align: left;
+        width: 94%;
+        max-width: unset;
+        > div{
+            width: 60%;
+            margin: auto;
+            h3{
+                text-align: left;
+                margin-top: 0;
+            }
+        }
+        img{
+            width: 30%;
+            margin-right: 15px;
+            max-width: 150px;
+        }
+        &:nth-child(2){
+            margin: 30px 0px;
+        }
+    }
+}

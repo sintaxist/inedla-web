@@ -16,6 +16,9 @@ h1,h2,h3,h5,h6{
 body{
   background-color: $white;
 }
+h3{
+  font-size: $font3;
+}
 p, a{
   font-size: $font5;
 }
@@ -28,6 +31,9 @@ p, a{
 }
 .blue-title{
   @include titleStyle($gradient, 0, auto, 30px );
+}
+.blue-title-left{
+  @include titleStyle($gradient, 0, left, 0px );
 }
 .white-title{
   @include titleStyle($white, 0, auto, 30px );
@@ -44,4 +50,26 @@ p, a{
 }
 .bgGradient{
   background: $gradient;
+}
+.padding30{
+  padding: 30px 0px;
+}
+.widthBreak{
+  max-width: 1300px;
+  margin: auto;
+}
+.breakWidth{
+  max-width: 1000px;
+  margin: auto;
+}
+.breakWidth2{
+  max-width: 700px;
+  padding: 60px 12% !important;
+  margin: auto;
+}
+.fixWidth{
+  width: fit-content;
+}
+.bottom30{
+  margin-bottom: 30px;
 }

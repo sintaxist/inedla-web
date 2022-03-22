@@ -34,7 +34,7 @@ const TestiMonials = () => {
         }
     };
     return (
-        <Content>
+        <Content className='widthBreak'>
             <h1 className="blue-title">TESTIMONIOS</h1>
             <OwlCarousel id="customer-testimonoals" className="owl-carousel owl-theme" {...options}>
                 {

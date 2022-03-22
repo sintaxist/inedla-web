@@ -31,7 +31,7 @@ const Cross = styled(Link)`
 `
 
 const SidebarNav = styled.nav`
-  background: #1f140f;
+  background: #0b0827;
   width: 250px;
   height: 100vh;
   display: flex;

@@ -1,0 +1,37 @@
+@import 'mixin.scss';
+
+.first{
+    align-items: center;
+    p{
+        margin-left: 15px;
+    }
+    img{
+        margin-right: 15px;
+    }
+}
+.second{
+    margin-top: 30px;
+    h4{
+        font-size: $font4;
+        text-align: center;
+        color: $white;
+        background: $gradient;
+        padding: 5px 0px;
+    }
+    p{
+        padding: 3%;
+    }
+}
+
+@media screen and(max-width: 960px) {
+    .first{
+        flex-direction: column-reverse;
+        p{
+            margin-left: 0px;
+            margin-bottom: 30px;
+        }
+        img{
+            margin-right: 0px;
+        }
+    }
+}
