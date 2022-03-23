@@ -19,8 +19,11 @@ body{
 h3{
   font-size: $font3;
 }
-p, a{
+p, a, strong{
   font-size: $font5;
+}
+strong{
+  font-weight: bold;
 }
 .white-back-shadow{
   background-color: $white;
@@ -35,9 +38,17 @@ p, a{
 .blue-title-left{
   @include titleStyle($gradient, 0, left, 0px );
 }
+.green-title-left{
+  @include titleStyle($gradient-2, 0, left, 0px );
+  font-size: $font3;
+}
+.white-title-left{
+  @include titleStyle($white, 0, left, 0px );
+  color: $white;
+}
 .white-title{
   @include titleStyle($white, 0, auto, 30px );
-  color: white;
+  color: $white;
 }
 .displayNone{
   display: none !important;
@@ -47,6 +58,9 @@ p, a{
 }
 .blueButton{
   @include ButtonStyles($white, $blue);
+}
+.buttonLeft{
+  margin: unset !important;
 }
 .bgGradient{
   background: $gradient;
@@ -70,6 +84,35 @@ p, a{
 .fixWidth{
   width: fit-content;
 }
+.left{
+  text-align: left;
+}
+.firstmargin30{
+  display: block;
+  margin: 0px auto 30px;
+}
+.margin30{
+  display: block;
+  margin: 30px auto;
+}
+.margin60{
+  display: block;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.lastItem{
+  display: block;
+  margin-bottom: 60px;
+}
 .bottom30{
+  display: block;
   margin-bottom: 30px;
+}
+.bottom60{
+  display: block;
+  margin-bottom: 60px;
+}
+.firstTitle{
+  display: block;
+  margin-bottom: 60px;
 }

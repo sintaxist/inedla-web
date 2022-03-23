@@ -3,14 +3,18 @@
 .first{
     align-items: center;
     p{
+        display: block;
+        width: 50%;
         margin-left: 15px;
+        font-size: $font4;
     }
     img{
+        display: block;
+        width: 50%;
         margin-right: 15px;
     }
 }
 .second{
-    margin-top: 30px;
     h4{
         font-size: $font4;
         text-align: center;
@@ -22,16 +26,99 @@
         padding: 3%;
     }
 }
-
+.third{
+    height: 500px;
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 60%;
+        height: 100%;
+        margin: auto;
+        margin-right: 15px;
+    }
+    img{
+        display: block;
+        width: 40%;
+        margin-left: 15px;
+        object-fit: cover;
+    }
+}
+.fourth{
+    padding: 60px 6%;
+    > ul{
+        max-width: 1300px;
+        margin: auto;
+        height: 350px;
+        img{
+            display: block;
+            margin: auto;
+            width: 40%;
+            height: 250px;
+            object-fit: cover;
+            object-position: center;
+            margin-right: 15px;
+        }
+        div{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-left: 15px;
+            p{
+                color: $white;
+            }
+        }
+    }
+}
 @media screen and(max-width: 960px) {
     .first{
         flex-direction: column-reverse;
         p{
+            width: 100%;
             margin-left: 0px;
             margin-bottom: 30px;
         }
         img{
             margin-right: 0px;
+            width: 320px;
+            object-fit: cover;
+            object-position: center;
+            min-height: 400px;
+        }
+    }
+    .breakWidth{
+        max-width: 1000px;
+    }
+    .third{
+        flex-direction: column;
+        height: auto;
+        div{
+            width: 100%;
+            margin-right: unset;
+        }
+        img{
+            width: 100%;
+            height: 400px;
+            object-fit: contain;
+            object-position: top;
+            margin-left: unset;
+        }
+    }
+    .fourth{
+        > ul{
+            flex-direction: column-reverse;
+            height: auto;
+            div{
+                height: 350px;
+                margin: auto;
+                margin-bottom: 30px;
+            }
+            img{
+                width: 50%;
+                max-width: 320px;
+                margin: auto;
+            }
         }
     }
 }

@@ -24,8 +24,10 @@
     margin: $margin;
     width: max-content;
     padding: 0px 30px 10px $padding;
-    margin-bottom: 30px;
     font-size: $font1;
+    strong{
+        font-size: $font1;
+    }
     &:before{
         content: '';
         border-radius: 50px;

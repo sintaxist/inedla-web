@@ -17,7 +17,7 @@ export const Grid2Items = styled.ul`
     justify-content: center;
     grid-template-columns: repeat(2, minmax(100px, 700px));
     grid-auto-rows: 200px;
-    grid-gap: 40px;
+    grid-gap: 30px;
 
     @media screen and (max-width: 960px){
         justify-content: space-between;
@@ -55,3 +55,23 @@ export const FlechaButton = () => {
         </svg>
     )
 }
+
+export const PContainer = styled.div`
+    display: block;
+    p{
+        margin-bottom: 30px;
+    }
+
+    @media screen and (max-width: 960px){
+        p{
+            margin-bottom: 15px;
+        }
+    }
+`
+
+export const LogoCopy = styled.div`
+    display: flex;
+    justify-content: space-between;
+    height: 250px;
+    padding: 3%;
+`

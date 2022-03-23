@@ -13,19 +13,23 @@ const Points = () => {
         // center: true,
         // autoWidth: true,
         items: 3,
-        autoplay: true,
+        // autoplay: true,
         dots: true,
         autoplayTimeout: 8500,
         smartSpeed: 450,
         nav: false,
+        margin: 70,
         // stagePadding: 30,
         // Se pueden ver los contenedores vecinos
         responsive: {
             0:{
                 items: 1
             },
+            560:{
+                items: 2
+            },
             960: {
-                items: 1
+                items: 3
             },
             1000:{
                 items: 3
@@ -33,7 +37,7 @@ const Points = () => {
         }
     };
     return (
-        <OwlCarousel id="Points-carousel" className="owl-carousel owl-theme" {...options}>
+        <OwlCarousel id="Points-carousel" className="bottom60 owl-carousel owl-theme" {...options}>
             {
                 pointsData.length === 0 ?
                     <div>No points Allowed</div> :
