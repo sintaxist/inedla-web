@@ -129,24 +129,17 @@ strong{
   font-weight: bold;
   font-size: $font2;
 }
-.Line{
-  width: 10px;
-  height: 120%;
-  background: $green;
-  position: absolute;
-  left: 10%;
-}
 .steps{
   margin-left: 100px;
   position: relative;
   &:before{
     content: '';
     position: absolute;
-    width: 10px;
+    width: 5px;
     height: 100%;
     background: $green;
     top: -15px;
-    left: -70px;
+    left: -73px;
   }
 }
 .lastStep{
@@ -154,7 +147,83 @@ strong{
     height: 0px;
   }
 }
-
+.link{
+  color: $blue;
+  text-decoration: none;
+  position: relative;
+  &:before{
+    content: '';
+    transition: all .3s;
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: -1px;
+    background-color: $blue;
+  }
+  &:hover{
+    &:before{
+      width: 100%;
+    }
+  }
+}
+.link-green{
+  color: $green;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+  &:before{
+    content: '';
+    transition: all .3s;
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: -1px;
+    background-color: $green;
+  }
+  &:hover{
+    &:before{
+      width: 100%;
+    }
+    .tooltip{
+      top: -40px;
+      opacity: 1;
+      transform: scaleY(1);
+    }
+  }
+}
+.tootltipFather{
+  display: block;
+  position: relative;
+  margin-top: 15px;
+}
+.tooltip{
+  position: absolute;
+  top: -120px;
+  left: 65px;
+  width: 250px;
+  z-index: 2;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: all .3s ease-out;
+  li{
+    font-size: $font6;
+    list-style: none;
+    margin: 15px 0px;
+    padding: 0px 15px;
+  }
+  &:before{
+    content: '';
+    top: 33px;
+    left: -20px;
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent; 
+    border-right:20px solid $white; 
+  }
+}
 @media screen and (max-width: 960px) {
   h3{
     font-size: $font4;
@@ -174,6 +243,12 @@ strong{
   .margin60{
     margin-top: 30px;
     margin-bottom: 30px;
+  }
+  .steps{
+    margin-left: 50px;
+    &:before{
+      left: -30px;
+    }
   }
 }
 @media  screen and(max-width: 550px) {

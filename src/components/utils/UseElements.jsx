@@ -109,7 +109,7 @@ export const LogoCopy = styled.div`
         font-size: 1.5rem;
         color: #F9FDFC;
         background: #51dcaa;
-        padding: 20px 25px;
+        padding: 15px 20px;
         border-radius: 50px;
         top: -20px;
         left: -100px;
@@ -118,6 +118,10 @@ export const LogoCopy = styled.div`
     @media screen and (max-width: 960px){
         p,strong{
             margin-bottom: 15px;
+        }
+        > span{
+            padding: 10px 15px;
+            left: -51px;
         }
     }
 `

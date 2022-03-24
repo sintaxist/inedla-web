@@ -1,8 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import {Content, FlexRow, ImgBanner, LogoCopy, PContainer} from '../utils/UseElements';
+// import { AccordionContainer, AccordionContent } from '../utils/colapseItems';
+// import {Accordion} from '../utils/accordion';
+import {Content, ImgBanner, LogoCopy, PContainer} from '../utils/UseElements';
+
+import '../../styles/colapseItems.scss';
 
 const Admisiones = () => {
+
+  const [selected, setSelected] = useState(null)
+  
+  const toggle = (i) => {
+    if(selected === i){
+      return setSelected(null)
+    }
+
+    setSelected(i)
+  }
+
   return (
     <>
       <ImgBanner src="https://www.xochimaco.com/img-inedla/banner-admisiones.png" alt="banner" />
@@ -20,7 +35,7 @@ const Admisiones = () => {
             <img src="https://www.xochimaco.com/img-inedla/solicitud.svg" alt="solicitud" />
             <div>
               <h3>Entrega tu solictud de admisión.</h3>
-              <p>Acude a nuestras instalaciones para obterner tu solicitud, ponte en contacto <Link to='/inscribete'>aquí</Link>.</p>
+              <p>Acude a nuestras instalaciones para obterner tu solicitud, ponte en contacto <Link className="link" to='/inscribete'>aquí</Link>.</p>
             </div>
           </LogoCopy>
 
@@ -30,7 +45,22 @@ const Admisiones = () => {
             <div>
               <h3>Entrega tus Documentos.</h3>
               <p>Como parte de tu proceso de inscripción es fundamental que conozcas la documentación requerida y la entregues al mismo tiempo que la solicitud de admisión.</p>
-              <p>Consulta los documentos <span>aqui</span></p>
+              <span className='tootltipFather'>
+                Consulta los documentos 
+                <span className='link-green'> aquí
+                <ul className='tooltip white-back-shadow'>
+                  <li>Certificado de bachillerato.</li>
+                  <li>Carta de autenticidad emitidpor la escuela donde se estudió el bachilerato.</li>
+                  <li>Acta de nacimiento actualizada.</li>
+                  <li>CURP.</li>
+                  <li>Identifiación oficial vigente.</li>
+                  <li>Comprobante de domicilio.</li>
+                  <li>Referencia laboral (en caso de trabajar) o 2 referencias personales si eres estudiante detiempo completo.</li>
+                  <li>2 fotografias tamaño infantil.</li>
+                  <li>Solicitud de admisión y aviso de privacidad.</li>
+                </ul>
+                </span>.
+              </span>
             </div>
           </LogoCopy>
 
@@ -70,6 +100,29 @@ const Admisiones = () => {
           </LogoCopy>
         </div>
         <h2 className='green-title-left firstTitle'>Preguntas frecuentes</h2>
+
+        <div className="accordion bottom60">
+          {
+            data.map((item, i)=>{
+              return(
+                <div className="item" key={item.id}>
+                  <div className={selected === i ? 'title active' : 'title'} onClick={() => toggle(i)}>
+                    <h2 className={selected === i ? 'titulo activo' : 'titulo'}>
+                      {item.question}
+                    </h2>
+                    <span>{selected === i ? '-' : '+'}</span>
+                  </div>
+                  <div className={selected === i ? 'content show' : 'content'}>
+                    <p>
+                      {item.answer}
+                    </p>
+                  </div>
+                </div>
+              )
+            })
+          }
+        </div>
+
         <PContainer>
           <strong>Si aún tienes dudas comunicate por cualquiera de estos medios</strong>
           <p>Correo electrónico: correo@mail.com</p>
@@ -82,3 +135,36 @@ const Admisiones = () => {
 };
 
 export default Admisiones;
+
+const data = [
+  {
+    id: 1,
+    question: 'Question 1',
+    answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ducimus sapiente blanditiis mollitia quaerat error.'
+  },
+  {
+    id: 2,
+    question: 'Question 2',
+    answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ducimus sapiente blanditiis mollitia quaerat error.'
+  },
+  {
+    id: 3,
+    question: 'Question 3',
+    answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ducimus sapiente blanditiis mollitia quaerat error.'
+  },
+  {
+    id: 4,
+    question: 'Question 4',
+    answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ducimus sapiente blanditiis mollitia quaerat error.'
+  },
+  {
+    id: 5,
+    question: 'Question 5',
+    answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ducimus sapiente blanditiis mollitia quaerat error.'
+  },
+  {
+    id: 6,
+    question: 'Question 6',
+    answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ducimus sapiente blanditiis mollitia quaerat error.'
+  },
+] 

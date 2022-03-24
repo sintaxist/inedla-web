@@ -1,0 +1,44 @@
+@import './mixin.scss';
+
+.container{
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+}
+.accordion{
+    width: 100%;
+    margin: 30px auto;
+    color: $white;
+}
+.accordionHeading{
+    background: $gradient;
+    padding: 15px 6%;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    h2{
+        color: $white;
+        font-weight: bold;
+    }
+    span{
+        cursor: pointer;
+    }
+}
+.accordionContent{
+    background-color: #e7f3ff;
+    height: 0;
+    opacity: 0;
+    display: flex;
+    overflow: hidden;
+    transition: all .6s ease-in-out;
+    p{
+        line-height: 1.6;
+    }
+}
+
+.accordionContent.show{
+    height: 180px;
+    opacity: 1;
+}
