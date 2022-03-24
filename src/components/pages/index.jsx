@@ -14,6 +14,7 @@ import styles from '../../styles/Home.module.scss';
 import Docentes from '../../images/docentes.svg';
 import XP from '../../images/experiencia.svg';
 import Clinica from '../../images/clinica.svg';
+import Form from '../utils/form';
 
 const Home = () => {
   return (
@@ -48,7 +49,7 @@ const Home = () => {
                 <img src={XP} alt="docentes"/>
                 <div>
                   <h3>55</h3>
-                  <p>Años de expereiencci en el área de Podología</p>
+                  <p>Años de expereiencia en el área de Podología</p>
                 </div>
             </div>
             <div className={styles.dato + ' bgGradient'}>
@@ -64,7 +65,7 @@ const Home = () => {
       <Testimonials/>
       <Content className='bgGradient'>
         <div className='widthBreak'>
-          <h2 className='white-title'>Noticias</h2>
+          <h2 className='white-title bottom30'>Noticias</h2>
           <Grid2Items className='padding30'>
             {
               NoticiasDataHome.map((noticia) =>{
@@ -80,6 +81,9 @@ const Home = () => {
             <FlechaButton/>
           </Button>
         </div>
+      </Content>
+      <Content className='widthBreak'>
+        <Form/>
       </Content>
     </>
   );

@@ -83,13 +83,13 @@ const conoceInedla = () => {
       <FlexRow className='breakWidth'>
         <img src="https://xochimaco.com/img-inedla/img-noticia.png" alt="img" />
         <div>
-          <h3 className='white-title-left'>Plantel</h3>
+          <h3 className='white-title-left bottom30'>Plantel</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu.</p>
           <Button className='whiteButton buttonLeft' to='plantel'>
             Ver más
             <FlechaButton/>
           </Button>
-          <h3 className='white-title-left'>conoce a tus profesores</h3>
+          <h3 className='white-title-left margin30'>conoce a tus profesores</h3>
           <Button className='whiteButton buttonLeft' to='equipo-docente'>
             Ver más
             <FlechaButton/>

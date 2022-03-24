@@ -6,7 +6,7 @@ import NoticiaCard from '../utils/noticiaCard';
 const Noticias = () => {
   return (
     <Content>
-      <h1 className="blue-title">Noticias</h1>
+      <h1 className="blue-title bottom60">Noticias</h1>
       <Grid2Items>
         {NoticiasData.map((noticia) =>{
           return(

@@ -35,7 +35,7 @@ const TestiMonials = () => {
     };
     return (
         <Content className='widthBreak'>
-            <h1 className="blue-title">TESTIMONIOS</h1>
+            <h1 className="blue-title bottom30">TESTIMONIOS</h1>
             <OwlCarousel id="customer-testimonoals" className="owl-carousel owl-theme" {...options}>
                 {
                     testiMonialsData.length === 0 ?

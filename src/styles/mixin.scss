@@ -39,6 +39,18 @@
         bottom: 0;
         left: $position;
     }
+    @media screen and(max-width:960px) {
+        font-size: $font2;
+        strong{
+            font-size: $font2;
+        }
+    }
+    @media screen and(max-width:550px) {
+        font-size: $font3;
+        strong{
+            font-size: $font3;
+        }
+    }
 }
 
 @mixin ButtonStyles ($color1, $color2){

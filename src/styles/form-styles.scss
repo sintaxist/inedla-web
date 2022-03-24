@@ -1,0 +1,167 @@
+@import './mixin.scss';
+
+#sib-container{
+    background: transparent !important;
+    padding: 60px 6% !important;
+    width: unset !important;
+}
+.sib-form-message-panel {
+    margin: unset !important;
+    padding: unset !important;
+    border: unset !important;
+    svg{
+        path{
+            fill: $white;
+        }
+    }
+}
+.sib-form-message-panel--active{
+    width: 100% !important;
+}
+.sib-form-message-panel--text{
+    width: 100% !important;
+    padding: 20px 0px;
+}
+#error-message{
+    background: linear-gradient(90deg, #FF0962 0%, #A01648 100%);
+    font-weight: bold;
+    color: $white;
+    width: unset;
+    border: none;
+}
+#success-message{
+    background: $gradient-2;
+    font-weight: bold;
+    color: $white;
+    width: unset;
+    border: none;
+}
+#sib-form{
+    position: relative;
+    h2{
+        text-align: left;
+        font-weight: bold;
+    }
+    > div{
+        margin-bottom: 60px;
+        position: relative;
+        input{
+            height: 30px;
+            background-color: transparent;
+            position: relative;
+            border: none;
+            transition: all .3s;
+            &:focus+label{
+                font-size: 12px;
+                top: -17px;
+            }
+            &:valid+label{
+                font-size: 12px;
+                top: -17px;
+            }
+            &:focus{
+                background: #e7f3ff;
+                outline: none;
+            }
+        }
+        label{
+            touch-action: manipulation;
+            transition: all .3s;
+            position: absolute;
+            top: 0;
+            left: 0;
+            cursor: text;
+            font-weight: 100;
+            font-size: .9rem;
+        }
+    }
+    .elementForm{
+        &:before{
+            content: '';
+            height: 3px;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            border-radius: 3px;
+            background: linear-gradient(90deg, #349EFF 0%, rgba(255, 9, 98, 0) 100%);
+        }
+    }
+    .checkInput{
+        position: unset;
+        display: flex;
+        align-items: center;
+        input{
+            margin-right: 15px;
+        }
+        span{
+             p{
+                font-size: $font6;
+             }
+        }
+    }
+}
+.sib-form-block {
+    padding: 0 !important;
+    word-wrap: break-word;
+    outline: none;
+    margin-bottom: 0px !important;
+}
+.sib-form-block__button {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: max-content;
+    margin: 40px 0px 0px;
+    padding: 3px 20px 3px 30px !important;
+    border-radius: 50px;
+    text-align:  center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .3s;
+    border:  3px $blue solid !important;
+    font-size: $font5;
+    .icon{
+        display: none;
+    }
+}
+.divForm{
+    @include flex-column();
+    justify-content: space-around;
+    width: 44%;
+    background: url('../images/imgForm.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 60px 6%;
+    li{
+        color: $white;
+        list-style: none;
+        font-size: $font4;
+        p{
+            color: $white;
+            font-size: $font6;
+            margin-top: 15px;
+        }
+    }
+}
+@media screen and(max-width: 960px) {
+    .formContainer{
+        flex-direction: column;
+    }
+    .divForm{
+        width: unset;
+        justify-content: space-between;
+        height: 300px;
+    }
+}
+@media screen and(max-width: 550px) {
+    .divForm{
+        li{
+            font-size: $font5;
+            p{
+                font-size: $font7;
+            }
+        }
+    }
+}

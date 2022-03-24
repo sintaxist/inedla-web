@@ -1,18 +1,18 @@
 import React from 'react';
-import { Content, PContainer, LogoCopy } from '../utils/UseElements';
+import { Content, PContainer, LogoCopy, ImgBanner } from '../utils/UseElements';
 
 const PlanEstudios = () => {
   return (
     <div>
-      <img src="https://www.xochimaco.com/img-inedla/banner-admisiones.png" alt="banner" />
+      <ImgBanner src="https://www.xochimaco.com/img-inedla/banner-esudios.png" alt="banner" />
       <Content>
-         <h1 className='blue-title'>Plan de Estudios</h1>
+         <h1 className='blue-title firstTitle'>Plan de Estudios</h1>
          <PContainer>
            <p>Nosotros realizamos con convenios para las prácticas clínicas en sitios como: Hospital General y las Unidades de Especialidades Médicas de Enfermedades Crónicas (UNEMeS EC)</p>
            <p>Ofrecemos un formación de personal como parte de un equipo multidisciplinario de salud.</p>
            <p>A través de nuestros dos pilares que son el TSU y RVOE, que nos distingue como institución, nuestro objetivo es formar personas capaces de resolver problemas reales aprovechando al máximo los recursos e incorporando la ética, el sentido social y un espíritu de servicio a su quehacer es la visión de los egresados.</p>
          </PContainer>
-         <h2>¿Qué es TSU y RVOE?</h2>
+         <h2 className='margin30 titleBold'><span>¿Qué es TSU y RVOE?</span></h2>
          <h3 className='green-title-left'>tsu</h3>
          <LogoCopy>
            <img src="https://www.xochimaco.com/img-inedla/tsu.svg" alt="tsu" />

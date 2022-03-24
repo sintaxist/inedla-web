@@ -4,6 +4,10 @@ import { Link } from "react-router-dom";
 export const Content = styled.div`
     display: block;
     padding: 60px 6%;
+
+    @media screen and (max-width: 550px){
+        padding: 30px 8%;
+    }
 `;
 
 export const FlexRow = styled.ul`
@@ -43,8 +47,12 @@ export const Button = styled(Link)`
 
 export const ImgBanner = styled.img`
     width: 100%;
-    height: 50vh;
+    height: 30vh;
     object-fit: cover;
+
+    @media screen and (max-width: 960px){
+        height: 20vh;
+    }
 `;
 
 export const FlechaButton = () => {
@@ -58,12 +66,13 @@ export const FlechaButton = () => {
 
 export const PContainer = styled.div`
     display: block;
-    p{
+    p, strong{
+        display: block;
         margin-bottom: 30px;
     }
 
     @media screen and (max-width: 960px){
-        p{
+        p,strong{
             margin-bottom: 15px;
         }
     }
@@ -71,7 +80,44 @@ export const PContainer = styled.div`
 
 export const LogoCopy = styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
     height: 250px;
-    padding: 3%;
+    position: relative;
+    img{
+        width: 100px;
+        margin-right: 30px
+    }
+    p{
+        margin-left: 15px;
+    }
+    h3{
+        text-align: left;
+        font-weight: bold;
+    }
+    div{
+        margin-left: 0px;
+        position: relative;
+        p{
+            margin-left: 0px;
+            margin-top: 15px;
+        }
+    }
+    > span{
+        position: absolute;
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: #F9FDFC;
+        background: #51dcaa;
+        padding: 20px 25px;
+        border-radius: 50px;
+        top: -20px;
+        left: -100px;
+    }
+
+    @media screen and (max-width: 960px){
+        p,strong{
+            margin-bottom: 15px;
+        }
+    }
 `

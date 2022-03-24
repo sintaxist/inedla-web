@@ -1,17 +1,12 @@
 import React from 'react';
+import Form from '../utils/form';
+import {Content} from '../utils/UseElements';
 
 const Inscribete = () => {
   return (
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: '90vh'
-      }}
-    >
-      <h1>Inscribete</h1>
-    </div>
+    <Content className='widthBreak'>
+      <Form />
+    </Content>
   );
 };
 
