@@ -21,7 +21,7 @@ const Admisiones = () => {
   return (
     <>
       <ImgBanner src="https://www.xochimaco.com/img-inedla/banner-admisiones.png" alt="banner" />
-      <Content>
+      <Content className='widthBreak'>
         <h1 className='blue-title-left'>Admisiones</h1>
         <PContainer className='margin60'>
           <p>Nosotros realizamos con convenios para las prácticas clínicas en sitios como: Hospital General y las Unidades de Especialidades Médicas de Enfermedades Crónicas (UNEMeS EC)</p>
@@ -123,7 +123,7 @@ const Admisiones = () => {
           }
         </div>
 
-        <PContainer>
+        <PContainer className='margin30'>
           <strong>Si aún tienes dudas comunicate por cualquiera de estos medios</strong>
           <p>Correo electrónico: correo@mail.com</p>
           <p>Teléfono: 999 999 9099 Ext. 9999, 0000, 9999 y 0000z</p>

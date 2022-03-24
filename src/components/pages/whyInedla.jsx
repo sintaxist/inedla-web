@@ -36,24 +36,24 @@ const conoceInedla = () => {
           </div>
         </div>
         <div className={card.cardValor + ' bottom30'}>
-          <img src="https://xochimaco.com/img-inedla/DSC_2082.png" alt="img" />
+          <img src="http://www.xochimaco.com/img-inedla/DSC_1696%201.png" alt="img" />
           <div className={card.info}>
-            <h3>Respeto</h3>
-            <p>Sabemos reconocer, apreciar y valorar las cualiddes del prójiimoy sus derechos</p>
+            <h3>Integridad</h3>
+            <p>Nuestra escencia es siempre actur con ética, sin afectar los intereses de otras personas, buscamos siempre hacer lo correcto.</p>
           </div>
         </div>
         <div className={card.cardValor + ' bottom30'}>
-          <img src="https://xochimaco.com/img-inedla/DSC_2082.png" alt="img" />
+          <img src="http://www.xochimaco.com/img-inedla/DSC_1957.png" alt="img" />
           <div className={card.info}>
-            <h3>Respeto</h3>
-            <p>Sabemos reconocer, apreciar y valorar las cualiddes del prójiimoy sus derechos</p>
+            <h3>Responsabilidad</h3>
+            <p>Creemos firmemente que todas las personas que forman parte de nuestra institución tienen la cualidad de cmpromeerse con lo que hacen o deciden teniendo como referente el bienestar común.s</p>
           </div>
         </div>
         <div className={card.cardValor + ' bottom30'}>
-          <img src="https://xochimaco.com/img-inedla/DSC_2082.png" alt="img" />
+          <img src="http://www.xochimaco.com/img-inedla/DSC_1655%201.png" alt="img" />
           <div className={card.info}>
-            <h3>Respeto</h3>
-            <p>Sabemos reconocer, apreciar y valorar las cualiddes del prójiimoy sus derechos</p>
+            <h3>Espíritu de Servicio</h3>
+            <p>Somos conscientes de nuestra responsabilidad con la sociedad en el campode la salud, favorecemos la empatía, la reciprocidad, la cooperación y la ayuda mutua</p>
           </div>
         </div>
       </div>
@@ -62,7 +62,7 @@ const conoceInedla = () => {
         <p className='bottom30'>Nuestro plan de estudios incluye áreas como biomecánica, podopediatría, podolgeriatría, podología deportiva que permiten una atención integral de los padecimientos del pie.  También incluimos materias como comunicación y calidad en la práctica podológica y el emprendimiento de un consultorio podológico para fortalecer la gestión de un consultorio propio de nuestros egresados.</p>
         <strong className='bottom30'>Tenemos autorización de nuestro plan de estudios por prate de la Secretaría de Salud (CEFRHS) y la Secretaría de Educación del Estado de Coahuila (RVOE)</strong>
         <strong className='bottom30'>El TSU en Podología te da la posibilidad de tener tu propio consultorio en poco tiempo</strong>
-        <Button className='blueButton buttonLeft' to='plan-de-estudios'>
+        <Button className='blueButton buttonLeft' to='/plan-de-estudios'>
           Conoce más
           <FlechaButton/>
         </Button>
@@ -85,12 +85,12 @@ const conoceInedla = () => {
         <div>
           <h3 className='white-title-left bottom30'>Plantel</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu.</p>
-          <Button className='whiteButton buttonLeft' to='plantel'>
+          <Button className='whiteButton buttonLeft' to='/plantel'>
             Ver más
             <FlechaButton/>
           </Button>
           <h3 className='white-title-left margin30'>conoce a tus profesores</h3>
-          <Button className='whiteButton buttonLeft' to='equipo-docente'>
+          <Button className='whiteButton buttonLeft' to='/equipo-docente'>
             Ver más
             <FlechaButton/>
           </Button>

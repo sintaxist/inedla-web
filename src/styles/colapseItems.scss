@@ -2,6 +2,7 @@
 
 .accordion{
     max-width:1300px;
+    margin: auto;
 }
 .item{
     background-color: #e7f3ff;
@@ -62,4 +63,27 @@
     height: auto;
     max-height: 9999px;
     padding: 30px 3%;
+}
+@media screen and(max-width: 960px){
+    .titulo{
+        font-size: $font5;
+    }
+    .title{
+        span{
+            font-size: $font3;
+        }
+    }
+    .content{
+        p{
+            font-size: $font7;
+        }
+    }
+    .content.show{
+        padding: 15px 3%;
+    }
+}
+@media screen and(max-width: 550px){
+    .titulo{
+        font-size: $font6;
+    }
 }

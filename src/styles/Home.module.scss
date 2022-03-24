@@ -2,7 +2,8 @@
 
 .bannerHome{
     width: 88%;
-    height: 75vh;
+    height: 70vh;
+    min-height: 400px;
     background: url(https://xochimaco.com/img-inedla/img-banner.png) no-repeat;
     background-size: cover;
     background-position: 50% 50%;
@@ -12,7 +13,7 @@
     position: relative;
     display: block;
     max-width: 50vw;
-    min-width: 400px;
+    min-width: 450px;
     top: 29%;
     left: 3%;
     h1{

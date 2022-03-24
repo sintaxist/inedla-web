@@ -17,7 +17,7 @@ export const MenuData = [
         subNav:[
             {
                 title:'¿Por qué estudiar en INEDLA?',
-                path: '/why-INEDLA',
+                path: '/estudia-podologia',
                 icon: <FaIcons.FaQuestion/>,
                 cName: 'dropdown-link'
             },
@@ -71,7 +71,7 @@ export const MenuData = [
 export const MenuItems = [
     {
         title:'¿Por qué estudiar en INEDLA?',
-        path: '/why-INEDLA',
+        path: '/estudia-podologia',
         cName: 'dropdown-link'
     },
     {
