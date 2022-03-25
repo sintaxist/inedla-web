@@ -2,7 +2,9 @@ import React from 'react';
 import * as FaIcons from 'react-icons/fa';
 import * as CgIcons from 'react-icons/cg';
 import {IoIosArrowUp,IoIosArrowDown} from 'react-icons/io';
-import {IoSchoolOutline,IoNewspaperOutline} from 'react-icons/io5';
+import {IoSchoolOutline,
+    // IoNewspaperOutline
+} from 'react-icons/io5';
 import * as FiIcons from 'react-icons/fi';
 import * as MdIcons from 'react-icons/md';
 
@@ -21,12 +23,12 @@ export const MenuData = [
                 icon: <FaIcons.FaQuestion/>,
                 cName: 'dropdown-link'
             },
-            {
-                title:'Equipo Docente',
-                path: '/equipo-docente',
-                icon: <FaIcons.FaChalkboardTeacher/>,
-                cName: 'dropdown-link'
-            },
+            // {
+            //     title:'Equipo Docente',
+            //     path: '/equipo-docente',
+            //     icon: <FaIcons.FaChalkboardTeacher/>,
+            //     cName: 'dropdown-link'
+            // },
             {
                 title:'Plantel',
                 path: '/plantel',
@@ -47,20 +49,20 @@ export const MenuData = [
         icon: <CgIcons.CgFileDocument/>,
         cName: 'dropdown-link',
     },
-    {
-        title: 'Comunidad',
-        path: '/comunidad',
-        icon: <MdIcons.MdPeopleOutline/>,
-        cName: 'dropdown-link',
-        subNav:[
-            {
-                title:'Plan de Estudios',
-                path: '/plan-de-estudios',
-                icon: <IoNewspaperOutline/>,
-                cName: 'dropdown-link'
-            }
-        ]
-    },
+    // {
+    //     title: 'Comunidad',
+    //     path: '/comunidad',
+    //     icon: <MdIcons.MdPeopleOutline/>,
+    //     cName: 'dropdown-link',
+    //     subNav:[
+    //         {
+    //             title:'Noticiass',
+    //             path: '/noticias',
+    //             icon: <IoNewspaperOutline/>,
+    //             cName: 'dropdown-link'
+    //         }
+    //     ]
+    // },
     {
         title: 'Contacto',
         path: '/contacto',
@@ -74,11 +76,11 @@ export const MenuItems = [
         path: '/estudia-podologia',
         cName: 'dropdown-link'
     },
-    {
-        title:'Equipo Docente',
-        path: '/equipo-docente',
-        cName: 'dropdown-link'
-    },
+    // {
+    //     title:'Equipo Docente',
+    //     path: '/equipo-docente',
+    //     cName: 'dropdown-link'
+    // },
     {
         title:'Plantel',
         path: '/plantel',

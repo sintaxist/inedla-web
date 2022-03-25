@@ -5,7 +5,7 @@ export const DocentesDatos = [
         age: '24 años',
         titulo: 'Lic. Podología',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        imgPath: 'img-profesor.png'
+        imgPath: 'DSC_2118.jpg'
     },
     {
         id: '1002',
@@ -13,7 +13,7 @@ export const DocentesDatos = [
         age: '24 años',
         titulo: 'Lic. Podología',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        imgPath: 'img-profesor.png'
+        imgPath: 'DSC_2118.jpg'
     },
     {
         id: '1003',
@@ -21,7 +21,7 @@ export const DocentesDatos = [
         age: '24 años',
         titulo: 'Lic. Podología',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        imgPath: 'img-profesor.png'
+        imgPath: 'DSC_2118.jpg'
     },
     {
         id: '1004',
@@ -29,6 +29,6 @@ export const DocentesDatos = [
         age: '24 años',
         titulo: 'Lic. Podología',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        imgPath: 'img-profesor.png'
+        imgPath: 'DSC_2118.jpg'
     },
 ];

@@ -4,10 +4,6 @@ import { Link } from "react-router-dom";
 export const Content = styled.div`
     display: block;
     padding: 60px 6%;
-
-    @media screen and (max-width: 550px){
-        padding: 30px 8%;
-    }
 `;
 
 export const FlexRow = styled.ul`
@@ -26,6 +22,10 @@ export const Grid2Items = styled.ul`
     @media screen and (max-width: 960px){
         justify-content: space-between;
         grid-template-columns: auto;
+    }
+
+    @media screen and (max-width: 550px){
+       grid-auto-rows: 250px;
     }
 `;
 
@@ -116,12 +116,28 @@ export const LogoCopy = styled.div`
     }
 
     @media screen and (max-width: 960px){
+        height: 400px;
         p,strong{
             margin-bottom: 15px;
         }
         > span{
             padding: 10px 15px;
             left: -51px;
+        }
+    }
+
+    @media screen and (max-width: 550px){
+        flex-direction: column;
+        img{
+            margin-bottom: 30px;
+            margin-right: 0px;
+        }
+        p, span{
+            margin-left: 0px;
+            text-align: center;
+        }
+        h3{
+            text-align: center;
         }
     }
 `

@@ -37,7 +37,7 @@ const Points = () => {
         }
     };
     return (
-        <OwlCarousel id="Points-carousel" className="bottom60 owl-carousel owl-theme" {...options}>
+        <OwlCarousel id="Points-carousel" className="points-carousel" {...options}>
             {
                 pointsData.length === 0 ?
                     <div>No points Allowed</div> :

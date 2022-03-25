@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import '../../styles/header-styles.scss'
 import logo from '../../images/logo.svg';
-import {Dropdown, DropdownTwo} from './Dropdown';
+import {Dropdown, 
+  // DropdownTwo
+} from './Dropdown';
 import MenuBars from './SidebarMenu/Sidebar'
 import {
   Nav,
@@ -14,7 +16,7 @@ import {IoIosArrowDown} from 'react-icons/io'
 
 function Navbar() {
   const [dropdown, setDropdown] = useState(false);
-  const [dropdown2, setDropdown2] = useState(false);
+  // const [dropdown2, setDropdown2] = useState(false);
 
   const onMouseEnter = () => {
     if (window.innerWidth < 768) {
@@ -32,25 +34,28 @@ function Navbar() {
     }
   };
 
-  const onMouseEnter2 = () => {
-    if (window.innerWidth < 960) {
-      setDropdown2(false);
-    } else {
-      setDropdown2(true);
-    }
-  };
+  // const onMouseEnter2 = () => {
+  //   if (window.innerWidth < 960) {
+  //     setDropdown2(false);
+  //   } else {
+  //     setDropdown2(true);
+  //   }
+  // };
 
-  const onMouseLeave2 = () => {
-    if (window.innerWidth < 960) {
-      setDropdown2(false);
-    } else {
-      setDropdown2(false);
-    }
-  };
+  // const onMouseLeave2 = () => {
+  //   if (window.innerWidth < 960) {
+  //     setDropdown2(false);
+  //   } else {
+  //     setDropdown2(false);
+  //   }
+  // };
 
   return (
-    <div className='white-back-shadow'>
+    <div className='white-back-shadow NavbarContainer'>
       <Nav className='widthBreak'>
+        <NavLink to='/' className="navbar-logo">
+          <Logo src={logo} alt="logo" />
+        </NavLink>
         <NavMenu>
             <div
               onMouseEnter={onMouseEnter}
@@ -67,26 +72,21 @@ function Navbar() {
               className='nav-links'>
                 Admisiones
             </NavLink>
-        </NavMenu>
-        <NavLink to='/' className="navbar-logo">
-          <Logo src={logo} alt="logo" />
-        </NavLink>
-        <NavMenu>
-          <div
-            onMouseEnter={onMouseEnter2}
-            onMouseLeave={onMouseLeave2}
-            className={dropdown2 ? 'father activo' : 'father'}>
-            <div className='nav-links submenu'>
-              Comunidad
-              <IoIosArrowDown/>
-            </div>
-            {dropdown2 && <DropdownTwo />}
-          </div>
-          <BtnLink
-            to='/inscribete'
-            className='nav-links inscribete'>
-            Inscribete
-          </BtnLink>
+            {/* <div
+              onMouseEnter={onMouseEnter2}
+              onMouseLeave={onMouseLeave2}
+              className={dropdown2 ? 'father activo' : 'father'}>
+              <div className='nav-links submenu'>
+                Comunidad
+                <IoIosArrowDown/>
+              </div>
+              {dropdown2 && <DropdownTwo />}
+            </div> */}
+            <BtnLink
+              to='/inscribete'
+              className='nav-links inscribete'>
+              Inscríbete
+            </BtnLink>
         </NavMenu>
         <MenuBars/>
       </Nav>

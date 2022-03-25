@@ -4,40 +4,36 @@ import '../../styles/form-styles.scss';
 
 export default class Form extends Component {
     componentDidMount() {
-        const script1 = document.createElement("script");
-        const script2 = document.createElement("script");
+        const fatherAppend  =  document.getElementById('formINEDLA');
+
+        const script1 = document.createElement("script")
 
         script1.src = "https://sibforms.com/forms/end-form/build/main.js";
         script1.async = true;
 
-        script2.src = "https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js";
-        script2.async = true;
-
-        document.body.appendChild(script1, script2);
+        fatherAppend.appendChild(script1);
     }
     render() {
         window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
         window.LOCALE = 'en';
-        window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
+        window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "Por favor verifica que tus datos sean los correctos.";
 
-        window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank. ";
+        window.REQUIRED_ERROR_MESSAGE = "Este campo es obligatorio.";
 
-        window.GENERIC_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
+        window.GENERIC_INVALID_MESSAGE = "Por favor verifica que tus datos sean los correctos.";
 
         window.translation = {
             common: {
-                selectedList: '{quantity} list selected',
-                selectedLists: '{quantity} lists selected'
+            selectedList: '{quantity} list selected',
+            selectedLists: '{quantity} lists selected'
             }
         };
-
-        (function () { var ldk = document.createElement('script'); ldk.type = 'text/javascript'; ldk.async = true; ldk.src = 'https://s.cliengo.com/weboptimizer/623a86aac2e52d002ad510f0/623a89b5c2e52d002ad51152.js?platform=onboarding_modular'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ldk, s); })();
         var AUTOHIDE = Boolean(1);
 
         console.log(AUTOHIDE)
 
         return (
-            <FlexRow className='white-back-shadow margin60 formContainer'>
+            <FlexRow id="formINEDLA" className='white-back-shadow margin60 formContainer'>
                 <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css"></link>
                 <div id="sib-form-container" className="sib-form-container">
                     <div id="error-message" className="sib-form-message-panel">
@@ -65,7 +61,7 @@ export default class Form extends Component {
                         </div>
                         <div id="sib-container" className="sib-container--large sib-container--vertical">
                             <form id="sib-form" method="POST"
-                                action="https://dc8b637e.sibforms.com/serve/MUIEAAD9FotPxjdyHgBUSa-4JXHRzbq91Yhx1QEzWhr21YK_UKbhw7qhrc4olgFJcGDiUYsm-TXDFbNsuo1Kx_yZqD3UMQGdhd7N4JAbppqtzphN5TsbEFRfRVH8Lq2JFSfErkOV4ekS_yIv_ewzSorsaQVNnTa0Fu0nsxq7nR3dFCie3wTfCHjBXrw6HFEpXvtteMOlRW7FbVzt"
+                                action="https://dc8b637e.sibforms.com/serve/MUIEAHtkmnYIo8TIubrCx597f5h52_euMeqkqUG5Ie0vssE-U_Z0DeQDqATkx0TTJsSmCtOVdsenVbDR-_3kZejAnqrSlrOKijxp0rqJyYJ87qWff9ezT5GUsR6YGYwBUj6SusfKKj6GDuNs1UJRxfmItN51Ps7yiJPygbE6VxkrpD_35f9gID4AYx_IRQqppOsD4EllMe5ksE9h"
                                 data-type="subscription">
                                 <h2 className='bottom60'>Agenda una visita a nuestras instalaciones y resuelve tus dudas</h2>
                                 <div className='elementForm'>
@@ -93,12 +89,108 @@ export default class Form extends Component {
                                         Correo electrónico
                                     </label>
                                 </div>
-                                <label className='checkInput'>
-                                    <input type="checkbox" className="input_replaced" id="OPT_IN" name="OPT_IN" />
-                                    <span className="checkbox checkbox_tick_positive"></span><span>
-                                        <p>¿Cuentas con certificado de preparatoria?</p>
-                                    </span>
-                                </label>
+                                <div className="elementForm noRelative">
+                                    <label className="entry__label" htmlFor="ESTADO" data-required="*">
+                                    Seleccioná tu estado
+                                    </label>
+                                    <div className="entry__field">
+                                    <select defaultValue={'DEFAULT'} className="input" id="ESTADO" name="ESTADO" data-required="true" >
+
+                                            <option value="DEFAULT" disabled>-- Estado --</option>
+
+                                            <option className="sib-menu__item" value="4">
+                                            Aguascalientes
+                                            </option>
+                                            <option className="sib-menu__item" value="5">
+                                            Baja California
+                                            </option>
+                                            <option className="sib-menu__item" value="6">
+                                            Baja California Sur
+                                            </option>
+                                            <option className="sib-menu__item" value="7">
+                                            Campeche
+                                            </option>
+                                            <option className="sib-menu__item" value="8">
+                                            Chiapas
+                                            </option>
+                                            <option className="sib-menu__item" value="9">
+                                            Chihuahua
+                                            </option>
+                                            <option className="sib-menu__item" value="10">
+                                            Ciudad de México
+                                            </option>
+                                            <option className="sib-menu__item" value="11">
+                                            Coahuila
+                                            </option>
+                                            <option className="sib-menu__item" value="12">
+                                            Colima
+                                            </option>
+                                            <option className="sib-menu__item" value="13">
+                                            Durango
+                                            </option>
+                                            <option className="sib-menu__item" value="14">
+                                            Guanajuato
+                                            </option>
+                                            <option className="sib-menu__item" value="15">
+                                            Guerrero
+                                            </option>
+                                            <option className="sib-menu__item" value="16">
+                                            Hidalgo
+                                            </option>
+                                            <option className="sib-menu__item" value="17">
+                                            Jalisco
+                                            </option>
+                                            <option className="sib-menu__item" value="18">
+                                            Estado de México
+                                            </option>
+                                            <option className="sib-menu__item" value="19">
+                                            Michoacán
+                                            </option>
+                                            <option className="sib-menu__item" value="20">
+                                            Nuevo León
+                                            </option>
+                                            <option className="sib-menu__item" value="21">
+                                            Oaxaca
+                                            </option>
+                                            <option className="sib-menu__item" value="22">
+                                            Puebla
+                                            </option>
+                                            <option className="sib-menu__item" value="23">
+                                            Querétaro
+                                            </option>
+                                            <option className="sib-menu__item" value="24">
+                                            Quintana Roo
+                                            </option>
+                                            <option className="sib-menu__item" value="25">
+                                            San Luis Potosí
+                                            </option>
+                                            <option className="sib-menu__item" value="26">
+                                            Sinaloa
+                                            </option>
+                                            <option className="sib-menu__item" value="27">
+                                            Sonora
+                                            </option>
+                                            <option className="sib-menu__item" value="28">
+                                            Tabasco
+                                            </option>
+                                            <option className="sib-menu__item" value="29">
+                                            Tamaulipas
+                                            </option>
+                                            <option className="sib-menu__item" value="30">
+                                            Tlaxcala
+                                            </option>
+                                            <option className="sib-menu__item" value="31">
+                                            Veracruz
+                                            </option>
+                                            <option className="sib-menu__item" value="32">
+                                            Yucatán
+                                            </option>
+                                            <option className="sib-menu__item" value="33">
+                                            Zacatecas
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
                                 <div className="sib-form-block">
                                     <button className="blueButton sib-form-block__button sib-form-block__button-with-loader"
                                         form="sib-form" type="submit">
@@ -121,16 +213,16 @@ export default class Form extends Component {
                 <ul className='divForm'>
                     <li>
                         <h4>Visítanos</h4>
-                        <p>Av. Lorem # 99, Colonia Vista Lorem, México, CDMX, C.P. 99999</p>
+                        <p>Av. Miguel Hidalgo 800 Ote, Segundo de Cobián Centro, Torreón, Coahuila</p>
                         <p>Lunes a Viernes de 9:00 a 18:00 hrs. y Sábado de 9:00 a 14:00 hrs.</p>
                     </li>
                     <li>
                         <h4>Llámanos</h4>
-                        <p>55 00 00 00 00</p>
+                        <p>871 514 6349</p>
                     </li>
                     <li>
                         <h4>Escríbenos</h4>
-                        <p>info@inedla.mx</p>
+                        <p>contacto@inedla.mx</p>
                     </li>
                 </ul>
             </FlexRow>

@@ -1,0 +1,59 @@
+@import 'mixin.scss';
+
+footer{
+    @include flex-column();
+    background: $black;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    > div{
+        width: 88%;
+        @include flex-column();
+        padding: 30px 6%;
+        align-items: center;
+        div{
+            @include flex-row();
+            // height: 40px;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+            max-width: 1300px;
+            margin: auto;
+            a{
+                color: $white;
+                text-decoration: none;
+                margin: 15px;
+                position: relative;
+                &:before{
+                    content: '';
+                    transition: all .3s;
+                    position: absolute;
+                    height: 2px;
+                    width: 0;
+                    bottom: -1px;
+                    background-color: $white;
+                }
+                &:hover{
+                    &:before{
+                        width: 100%;
+                    }
+                }
+            } 
+        }
+        img{
+            margin: auto auto 30px;
+            display: block;
+        }
+    }
+    address{
+        font-style: normal;
+        font-size: 13px;
+        color: $white;
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0px;
+        border-top: 2px $white solid;
+    }
+}

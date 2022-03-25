@@ -1,5 +1,5 @@
 import placeholder from '../../images/placeholder.jpeg';
 
 export function getNoticiaImg(path){
-    return path ? `https://xochimaco.com/img-inedla/${path}` : placeholder;
+    return path ? `https://inedla.mx/sitio-revision/img-web/${path}` : placeholder;
 }

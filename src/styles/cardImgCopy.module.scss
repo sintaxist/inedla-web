@@ -121,13 +121,22 @@
     
     .cardValor{
         .info{
+            width: 50%;
             h3{
                 margin-bottom: 10px;
-                font-size: $font5;
-            }
-            p{
                 font-size: $font6;
             }
+            p{
+                font-size: $font7;
+            }
         }
+        img{
+            width: 50%;
+        }
+    }
+}
+@media screen and(max-width: 550px) {
+    .gridContain{
+        grid-auto-rows: 300px !important;
     }
 }

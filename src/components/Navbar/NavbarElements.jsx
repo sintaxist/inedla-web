@@ -4,13 +4,14 @@ import styled from 'styled-components';
 export const Nav = styled.nav`
     display: flex;
     justify-content: space-between;
-    padding: .5rem 3%;
+    padding: .5rem 6%;
     height: 80px;
     z-index: 99;
 `;
 
 export const NavMenu = styled.div`
-    width: 35%;
+    width: 100%;
+    max-width: 700px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,7 +30,8 @@ export const NavLink = styled(Link)`
 export const Logo = styled.img`
     display: block;
     margin: auto;
-    padding: 0rem 6%;
+    margin-left: 0;
+    padding: 0rem 6% 0rem 0rem;
     height: auto;
     width: 80%;
     max-width: 250px;

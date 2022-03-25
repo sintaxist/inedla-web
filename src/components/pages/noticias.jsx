@@ -5,7 +5,7 @@ import NoticiaCard from '../utils/noticiaCard';
 
 const Noticias = () => {
   return (
-    <Content>
+    <Content className='marginCorrection'>
       <h1 className="blue-title bottom60">Noticias</h1>
       <Grid2Items>
         {NoticiasData.map((noticia) =>{

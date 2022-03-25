@@ -45,27 +45,36 @@
     }
 }
 .fourth{
-    padding: 60px 6%;
-    height: 400px;
+    padding: 0 6% 0 0;
+    height: max-content;
+    overflow: hidden;
     > ul{
-        max-width: 1300px;
-        margin: auto;
-        height: 350px;
+        justify-content: unset;
         img{
             display: block;
-            margin: auto;
-            width: 40%;
-            height: 250px;
+            width: 50%;
+            height: 400px;
             object-fit: cover;
             object-position: center;
             margin-right: 15px;
         }
-        div{
-            height: 100%;
+        > div{
+            width: 50%;
+            max-width: 550px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            margin-left: 15px;
+            padding: 30px 3%;
+            h3{
+                margin-bottom: 0px;
+                margin-top: 0px;
+                text-align: left;
+                font-size: $font3;
+                margin-bottom: 30px;
+            }
+            a{
+                margin-top: 0px;
+            }
             p{
                 color: $white;
             }
@@ -114,18 +123,33 @@
     }
     .fourth{
         height: auto;
+        padding: 0;
         > ul{
-            flex-direction: column-reverse;
+            flex-direction: column;
             height: auto;
             div{
-                height: 350px;
-                margin: auto;
-                margin-bottom: 30px;
+                width: auto;
+                max-width: unset;
+                height: max-content;
             }
             img{
-                width: 50%;
-                max-width: 320px;
-                margin: 30px auto;
+                width: 100%;
+                height: 300px;
+                margin: 0px;
+            }
+        }
+    }
+    .secondSect{
+        margin-top: 60px;
+    }
+}
+@media screen and(max-width: 550px) {
+    .fourth{
+        > ul{
+            div{
+                h3{
+                    font-size: $font4;
+                }
             }
         }
     }

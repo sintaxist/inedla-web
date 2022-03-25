@@ -1,3 +1,4 @@
+import React from 'react'
 import './styles/App.scss';
 import Navbar from './components/Navbar';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
@@ -10,10 +11,17 @@ import Plantel from './components/pages/plantel';
 import PlanEstudios from './components/pages/estudios';
 import Noticias from './components/pages/noticias';
 import { NoticiaDetail } from './components/pages/NoticiaDetail';
+import { Footer } from './components/footer';
+import ScrollToTop from './components/utils/ScrollToTop';
 
-function App() {
-  return (
-    <Router>
+class App extends React.Component {
+  componentDiMount(){
+    document.title = "INEDLA"
+  }
+  render (){
+    return (
+      <Router>
+      <ScrollToTop/>
       <Navbar/>
       <Routes>
         <Route path="/" exact element={<Home/>}></Route>
@@ -26,8 +34,10 @@ function App() {
         <Route path="/noticias" exact element={<Noticias/>}></Route>
         <Route path="/noticias/:movieId" exact element={<NoticiaDetail/>}></Route>
       </Routes>
+      <Footer/>
     </Router>
-  );
+    )
+  };
 }
 
 export default App;

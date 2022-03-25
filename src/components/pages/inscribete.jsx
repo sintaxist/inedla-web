@@ -4,7 +4,7 @@ import {Content} from '../utils/UseElements';
 
 const Inscribete = () => {
   return (
-    <Content className='widthBreak'>
+    <Content className='widthBreak marginCorrection'>
       <Form />
     </Content>
   );

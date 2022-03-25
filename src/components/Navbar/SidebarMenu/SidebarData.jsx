@@ -16,7 +16,7 @@ export const SidebarData = [
     subNav: [
       {
         title: '¿Por qué estudiar en INEDLA?',
-        path: '/why-INEDLA',
+        path: '/estudia-podologia',
         icon: <FaIcons.FaQuestion />
       },
       {

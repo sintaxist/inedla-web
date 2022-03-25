@@ -7,7 +7,7 @@ import styles from '../../styles/cardImgCopy.module.scss';
 
 const Docentes = () => {
   return (
-    <Content className='widthBreak'>
+    <Content className='widthBreak marginCorrection'>
       <h1 className='blue-title firstTitle'>Equipo Docente</h1>
       <h3>Todos nuestros docentes cuentan con años de experiencia en la práctica de la Podología clínica.</h3>
       <Grid2Items className={styles.gridContain}>

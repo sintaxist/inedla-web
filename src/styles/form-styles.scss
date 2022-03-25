@@ -145,6 +145,40 @@
         }
     }
 }
+.noRelative{
+    position: unset !important;
+    margin-top: -20px;
+    &::before{
+        height: 0 !important;
+        width: 0 !important;
+    }
+    select{
+        width: 100%;
+        border: none;
+        border-bottom: 3px $blue solid;
+        transition: all .3s;
+        background-color: $white;
+        height: 30px;
+        &:focus{
+            outline: none;
+            background-color: #e7f3ff;
+        }
+        &:active{
+            outline: none;
+            background-color: #e7f3ff;
+        }
+        &:valid{
+            outline: none;
+            background-color: #e7f3ff;
+        }
+        option{
+            margin-top: 30px;
+        }
+    }
+    label{
+        position: relative !important;
+    }
+}
 @media screen and(max-width: 960px) {
     .formContainer{
         flex-direction: column;
