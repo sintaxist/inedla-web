@@ -61,7 +61,7 @@ export default class Form extends Component {
                         </div>
                         <div id="sib-container" className="sib-container--large sib-container--vertical">
                             <form id="sib-form" method="POST"
-                                action="https://dc8b637e.sibforms.com/serve/MUIEAHtkmnYIo8TIubrCx597f5h52_euMeqkqUG5Ie0vssE-U_Z0DeQDqATkx0TTJsSmCtOVdsenVbDR-_3kZejAnqrSlrOKijxp0rqJyYJ87qWff9ezT5GUsR6YGYwBUj6SusfKKj6GDuNs1UJRxfmItN51Ps7yiJPygbE6VxkrpD_35f9gID4AYx_IRQqppOsD4EllMe5ksE9h"
+                                action="https://dc8b637e.sibforms.com/serve/MUIEAHw-cZL-e7_xFxlrBEmjAD-FE93ki491w5AH9UjjNjAaOE6oywiGmuPWKO3wLY0mgjedOxmx0zoWrq9A9td-cznd6wNNYqNjTqJxRCSjCsqKVV4rFIv4tG774uCmBD5mL-aT5aFqYTSiISjEPG8Wml_oe5ayrIlan0cAph1v0cDrUqShxozM7OGYkF4koKcRjivkHR9cakP7"
                                 data-type="subscription">
                                 <h2 className='bottom60'>Agenda una visita a nuestras instalaciones y resuelve tus dudas</h2>
                                 <div className='elementForm'>
@@ -91,7 +91,7 @@ export default class Form extends Component {
                                 </div>
                                 <div className="elementForm noRelative">
                                     <label className="entry__label" htmlFor="ESTADO" data-required="*">
-                                    Seleccioná tu estado
+                                    Selecciona tu estado
                                     </label>
                                     <div className="entry__field">
                                     <select defaultValue={'DEFAULT'} className="input" id="ESTADO" name="ESTADO" data-required="true" >

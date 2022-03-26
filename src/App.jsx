@@ -13,6 +13,7 @@ import Noticias from './components/pages/noticias';
 import { NoticiaDetail } from './components/pages/NoticiaDetail';
 import { Footer } from './components/footer';
 import ScrollToTop from './components/utils/ScrollToTop';
+import { ButtonWhatsapp } from './components/buttonWhatsapp';
 
 class App extends React.Component {
   componentDiMount(){
@@ -24,7 +25,7 @@ class App extends React.Component {
       <ScrollToTop/>
       <Navbar/>
       <Routes>
-        <Route path="/" exact element={<Home/>}></Route>
+        <Route path="" exact element={<Home/>}></Route>
         <Route path="/admisiones" exact element={<Admisiones/>}></Route>
         <Route path="/inscribete" exact element={<Inscribete/>}></Route>
         <Route path="/estudia-podologia" exact element={<WhyINEDLA/>}></Route>
@@ -35,6 +36,7 @@ class App extends React.Component {
         <Route path="/noticias/:movieId" exact element={<NoticiaDetail/>}></Route>
       </Routes>
       <Footer/>
+      <ButtonWhatsapp/>
     </Router>
     )
   };

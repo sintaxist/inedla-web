@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import {Content, ImgBanner, LogoCopy, PContainer} from '../utils/UseElements';
 
@@ -7,15 +7,15 @@ import Form from '../utils/form';
 
 const Admisiones = () => {
 
-  const [selected, setSelected] = useState(null)
+  // const [selected, setSelected] = useState(null)
   
-  const toggle = (i) => {
-    if(selected === i){
-      return setSelected(null)
-    }
+  // const toggle = (i) => {
+  //   if(selected === i){
+  //     return setSelected(null)
+  //   }
 
-    setSelected(i)
-  }
+  //   setSelected(i)
+  // }
 
   return (
     <div className='marginCorrection'>

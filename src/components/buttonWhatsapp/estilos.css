@@ -1,0 +1,31 @@
+/* -------- BOTÓN DE WHATSAPP -------- */
+.whatsapp-button{
+	width:50px;
+	height:50px;
+	position:fixed;
+	z-index:9999999;
+	bottom: 20px;
+	right: 20px;
+	border-radius:60px;
+	background:#25d366;
+	padding:7px 7px 9px 9px;
+	box-sizing:border-box;
+}
+.whatsapp-button img{
+	width:100%;
+	height:auto;
+}
+#btn-web{
+	display:block;
+}
+#btn-mob{
+	display:none;
+}
+@media (max-width: 600px){
+	#btn-web{
+		display:none;
+	}
+	#btn-mob{
+		display:block;
+	}
+}
