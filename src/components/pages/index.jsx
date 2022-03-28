@@ -15,9 +15,9 @@ import Docentes from '../../images/docentes.svg';
 import XP from '../../images/experiencia.svg';
 import Clinica from '../../images/clinica.svg';
 import Form from '../utils/form';
+import Gallery from '../Gallery/galleryHome';
 
 const Home = () => {
-  const url = 'https://inedla.mx/sitio-revision/img-web/';
   return (
     <>
       <div className={styles.bannerHome}>
@@ -66,17 +66,13 @@ const Home = () => {
       {/* <Testimonials/> */}
       <Content className='widthBreak'>
         <h2 className='blue-title bottom30'>galería</h2>
-        <div className={styles.galleryHome + ' margin60'}>
-          <img className='imgItem item1' src={url+'DSC_1823.jpg'} alt="img1" />
-          <img className='imgItem item2' src={url+'DSC_1709.jpg'} alt="img2" />
-          <img className='imgItem item3' src={url+'DSC_1679.jpg'} alt="img3" />
-          <img className='imgItem item4' src={url+'DSC_2024.jpg'} alt="img4" />
-          <img className='imgItem item5' src={url+'DSC_1905.jpg'} alt="img5" />
-        </div>
-          <Button className='blueButton' to='/plantel'>
-            Ver más
-            <FlechaButton/>
-          </Button>
+        <Gallery/>
+
+        <Button className='blueButton' to='/plantel'>
+          Ver más
+          <FlechaButton/>
+        </Button>
+
       </Content>
       {/* <Content className='bgGradient'>
         <div className='widthBreak'>

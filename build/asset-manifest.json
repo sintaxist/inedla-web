@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/sitio-revision/static/css/main.d0bfe5c3.css",
-    "main.js": "/sitio-revision/static/js/main.d4be367f.js",
+    "main.css": "/sitio-revision/static/css/main.8a34e8b3.css",
+    "main.js": "/sitio-revision/static/js/main.34cad26c.js",
     "static/media/banner-home.jpg": "/sitio-revision/static/media/banner-home.810267c096dfeea368ba.jpg",
     "static/media/imgForm.png": "/sitio-revision/static/media/imgForm.cc387c6b3137b428a9da.png",
     "static/media/experiencia.svg": "/sitio-revision/static/media/experiencia.dbd2fa33cd045d25f8197b819124e549.svg",
@@ -10,11 +10,11 @@
     "static/media/white-logo.svg": "/sitio-revision/static/media/white-logo.a0182af5877cb962464d31627a2f9786.svg",
     "static/media/logo.svg": "/sitio-revision/static/media/logo.97e06055e032467c8202e4c7098dccbf.svg",
     "index.html": "/sitio-revision/index.html",
-    "main.d0bfe5c3.css.map": "/sitio-revision/static/css/main.d0bfe5c3.css.map",
-    "main.d4be367f.js.map": "/sitio-revision/static/js/main.d4be367f.js.map"
+    "main.8a34e8b3.css.map": "/sitio-revision/static/css/main.8a34e8b3.css.map",
+    "main.34cad26c.js.map": "/sitio-revision/static/js/main.34cad26c.js.map"
   },
   "entrypoints": [
-    "static/css/main.d0bfe5c3.css",
-    "static/js/main.d4be367f.js"
+    "static/css/main.8a34e8b3.css",
+    "static/js/main.34cad26c.js"
   ]
 }
