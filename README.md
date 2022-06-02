@@ -1,6 +1,6 @@
 # Make a siteweb for a school of PODOLOGY
 
-This siteweb is the first who oficially was meake with REACT.ja and make an integration with Sendinblue (CRM) into the form.
+This siteweb is the first who oficially was make with REACT.ja and make an integration with Sendinblue (CRM) into the form.
 
 ## Package use
 
