@@ -1,6 +1,16 @@
-# Getting Started with Create React App
+# Make a siteweb for a school of PODOLOGT
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This siteweb is the first who oficially was meake with REACT.ja and make an integration with Sendinblue (CRM) into the form.
+
+## Package use
+
+react-router-dom
+
+styled-components
+
+react-owl-carousel
+
+sass
 
 ## Available Scripts
 
